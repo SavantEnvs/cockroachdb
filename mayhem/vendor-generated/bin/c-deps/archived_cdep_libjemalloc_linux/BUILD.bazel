@@ -1,0 +1,11 @@
+
+filegroup(
+    name = "headers",
+    srcs = glob(["include/**/*.h"]),
+    visibility = ["//visibility:public"],
+)
+filegroup(
+    name = "libs",
+    srcs = glob(["lib/**"]),
+    visibility = ["//visibility:public"],
+)

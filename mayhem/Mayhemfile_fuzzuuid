@@ -1,0 +1,8 @@
+project: savantenvs/cockroachdb
+target: fuzzuuid
+cmds:
+  - cmd: /mayhem/fuzzuuid
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzzuuid/testsuite
